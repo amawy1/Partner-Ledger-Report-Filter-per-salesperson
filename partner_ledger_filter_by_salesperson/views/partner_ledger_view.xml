@@ -1,0 +1,15 @@
+<odoo>
+    <template id="search_template_partner_inherit" inherit_id="account_reports.search_template_partner">
+        <xpath expr="//ul[@class='dropdown-menu o_filter_menu']" position="inside">
+            <li class="o_account_report_search js_account_salesperson_m2m">
+                <div class="o_m2m_selection">
+                    <span class="fa fa-user"/> Salesperson
+                    <input type="hidden" class="o_input" name="salesperson_id" value=""/>
+                    <button type="button" class="btn btn-primary btn-salesperson-filter">
+                        Apply Filter
+                    </button>
+                </div>
+            </li>
+        </xpath>
+    </template>
+</odoo>
